@@ -1,5 +1,6 @@
 package com.ifsc.contaclick;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,13 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
         b.setOnClickListener(v->{
 
-            Double peso = Double.parseDouble(edPeso.getText().toString());
-            Double altura = Double.parseDouble(edAltura.getText().toString());
-            Double imc = peso/(altura*altura);
-
-            DecimalFormat decimalFormat = new DecimalFormat( "##.##");
-            tvIMC.setText(decimalFormat.format(imc));
-
+            Intent intent = new Intent(getApplicationContext(), MainActivityB.class);
+            String msg = edPeso.getText().toString();
+            intent.putExtra("mensagem",msg);
+            startActivity(intent);
         });
 
 
