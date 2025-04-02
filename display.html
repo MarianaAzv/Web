@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0px;
+        padding: 0px;
+    }
+     p{display: inline-block;
+        border:1px solid rgb(19, 128, 19);
+        border-top-color: blue;
+        border-right-color: brown;
+        border-bottom-color:cadetblue;
+        border-left-color: chocolate;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    outline: 1px solid green;
+    border-radius:  50%;
+
+    background-color: rgb(80, 129, 194);
+    background-image: url("chromosome-svgrepo-com.png");
+    background-position: center center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+
+    animation: rotacao 10s linear 0s infinite;
+     }
+
+     @keyframes rotacao{
+        0%{
+            transform: rotate(0deg);
+            zoom:1;
+            width: 0px;
+            height: 0px ;
+        } 
+
+        50%{
+            width: 100px;
+            height: 100px;
+            transform: translateY(360px);
+        }
+        100%{
+            transform: rotate(360deg);
+            transform: translateX(1000px);
+            zoom: 2;
+            width: 0px;
+            height: 0px;
+        }
+     }
+    </style>
+</head>
+<body>
+    <p class="nomeclasse"></p>
+    <p>Oiiiii</p><p>oiiiiiii</p>
+</body>
+</html>
