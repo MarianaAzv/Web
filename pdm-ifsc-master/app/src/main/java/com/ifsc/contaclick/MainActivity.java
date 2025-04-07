@@ -34,9 +34,19 @@ public class MainActivity extends AppCompatActivity {
 
         b.setOnClickListener(v->{
 
+            String heightTxt = edAltura.getText().toString();
+            double height = Double.parseDouble(heightTxt);
+
+            String weightTxt = edPeso.getText().toString();
+            double weight = Double.parseDouble(weightTxt);
+
+            
+
             Intent intent = new Intent(getApplicationContext(), MainActivityB.class);
             String msg = edPeso.getText().toString();
+            String altura = edAltura.getText().toString();
             intent.putExtra("mensagem",msg);
+            intent.putExtra("altura",altura);
             startActivity(intent);
         });
 

@@ -5,9 +5,6 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivityB extends AppCompatActivity {
 
@@ -18,9 +15,13 @@ public class MainActivityB extends AppCompatActivity {
         setContentView(R.layout.activity_main_b);
 
         Bundle bundle = getIntent().getExtras();
+
         String msg = bundle.getString("mensagem");
+        String altura = bundle.getString("altura");
         TextView textView = findViewById(R.id.textView);
         textView.setText(msg);
+        TextView tvAltura = findViewById(R.id.tvAltura);
+        tvAltura.setText(altura);
 
     }
 }
