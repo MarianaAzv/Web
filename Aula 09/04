@@ -1,0 +1,20 @@
+POSICIONAMENTO NA WEB 
+1990 - FLUXO DO DOCUMENTO html
+ELEMENTOS COM EXIBIÇÃO EM INLINE E BLOCK
+
+1993- CSS196 tRAZENDO A PROPRIEDADE DISPLAY {INLINE, BLOCK, INLINE-BLOCK}
+
+1998- Position 
+top,left,right,bottom
+
+ex: { ...
+      top: 100px
+      ...}
+TEm muitas possibilidades para se referenciar 
+entao criaram o static -é o position padrao {todas as imagens tem position static}
+relative -posiciona o elemento em relação a posiçao estatica.
+
+Position absolute 
+Quando nao tem um ancestral estatica
+
+Se posiciona em relaçao ao primeiro ancestral nao estatico

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+    #box1 {
+     
+    background-color: red;
+    height: 100px;
+        width: 100px;
+    top:0%;
+    right: 0%;
+    }
+    #box2{
+       position:fixed;
+    background-color: purple;
+     height: 100px;
+        width: 100px;
+        top:0%;
+        right: 0%;
+    }
+
+    #box3{
+        display:inline-block;
+    background-color:gray;
+    Position: fixed;
+     height: 100px;
+        width: 100px;
+        
+        top:50%;
+        left:50%;
+      transform: translate(-50%,-50%);
+      z-index: -1;
+        }
+    
+    #box4{
+        position:fixed;
+    background-color:green;
+   
+    bottom: 0%;
+    left:0%;
+     height: 100px;
+        width: 100px;
+    }
+
+    #box5{
+        position:absolute;
+    background-color:yellow;
+   
+   bottom: 0%;
+   right: 0%;
+     height: 100px;
+        width: 100px;
+    }
+p{
+        top:50%;
+        left:50%;
+     
+    }
+ </style>   
+</head>
+<body>
+    <div>
+        <div id="box1" class="box">Esquerda em cima</div>
+        <div id="box2" class="box">Direita em cima</div>
+        <div id="box3" class="box"> <p>Centro</p></div>
+        <div id="box4" class="box">Esquerda embaixo</div>
+        <div id="box5" class="box">Direita embaixo</div>
+     
+    </div>
+</body>
+</html>
