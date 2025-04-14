@@ -3,20 +3,17 @@ package com.ifsc.contaclick;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.DecimalFormat;
-
 public class MainActivity extends AppCompatActivity {
 
     Integer i=0;
 
-    EditText edPeso, edAltura;
+    EditText edNome, edPeso, edAltura;
     TextView tvIMC;
 
     Button b;
@@ -29,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         edAltura =  findViewById(R.id.edAltura);
         edPeso =  findViewById(R.id.edPeso);
-        tvIMC = findViewById(R.id.tvIMC);
+        edNome =  findViewById(R.id.edNome);
+
+        tvIMC = findViewById(R.id.tvIMCTxt);
         b = findViewById(R.id.button);
 
         b.setOnClickListener(v->{
@@ -40,13 +39,17 @@ public class MainActivity extends AppCompatActivity {
             String weightTxt = edPeso.getText().toString();
             double weight = Double.parseDouble(weightTxt);
 
-            
+            double imc = weight/(height*height);
 
             Intent intent = new Intent(getApplicationContext(), MainActivityB.class);
-            String msg = edPeso.getText().toString();
+            String nome = edNome.getText().toString();
+            String peso = edPeso.getText().toString();
             String altura = edAltura.getText().toString();
-            intent.putExtra("mensagem",msg);
+            String imcTxt = String.valueOf(imc);
+            intent.putExtra("nome",nome);
+            intent.putExtra("peso",peso);
             intent.putExtra("altura",altura);
+            intent.putExtra("imc",imcTxt);
             startActivity(intent);
         });
 
