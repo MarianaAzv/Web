@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi</li> <p> é a cor vermelha pois esta usando a regra somente do li</p>
+   <!--item 2--> <li           class="fruta">Melão</li> <p> A cor é cinza pois tem a classe fruta </p>
+   <!--item 3--> <li id="lip2" class="fruta">Pera</li><p> A cor é azul pois a regra que prevalece é a do id</p>
+   <!--item 4--> <li id="lip3" class="fruta">Uva</li><p> A cor é amarela pois é a mais especifica para essa situaçao</p>
+   <!--item 5--> <li id="lip4" class="fruta">Maçã</li><p>A cor é cinza pois a regra que prevalece é a da classe</p>
+   <!--item 6--> <li           class="churras">Carne</li><p> A regra 4 pois tem um li+ um li.churros</p>
+   <!--item 7--> <li           class="churras">Linguiça</li><p> A regra 4 pois tem um li+ um li.churros</p>
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li> <p>A cor é magenta pois é a regra mais especifica para esse caso</p>
+   </ol>   
+</body>
+</html>
