@@ -27,13 +27,17 @@
             
         let listagem =document.createElement("ul")
         listagem.style.display="Flex"
+        listagem.style.flexWrap="Wrap"
         document.body.appendChild(listagem)
 
         for(i=0; i<=n; i++) {
       item=document.createElement("li")
       item.innerHTML=i
       item.id="n"+i
-      listagem.appendChild(item);
+      listagem.appendChild(item)
+      item.style.width="50px"
+      item.style.height ="50px"  
+      
 
         /*Altere a cor de fundo para vermelho, dos items contendo numeros pares*/
         if(i%2==0){
