@@ -111,4 +111,4 @@ let a =Number( prompt("Informe o valor A"));
 undefined
 console.log(a+b)
 
-
+O script coloca no final das tags, para nao dar erro de compilacao
