@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        /* Comentario: alert("Ola mundo"); */
+
+        /*Leia 2 variaveis a e b e imprima*/
+
+        let a = Number(prompt("Informe o valor a"));            
+        let b = Number(prompt("Informe o valor b"));
+
+        console.log("a + b:"+ (a+b));
+        
+        /*Crie um paragrafo, 
+        -adicione ele como filho de body
+        -defina o conteudo de p como a soma 
+        */
+
+       
+
+       let p=document.createElement("p");
+       p.innerHTML="a+b="+(a+b);
+       document.body.appendChild(p);
+      
+
+    </script>
+</body>
+</html>

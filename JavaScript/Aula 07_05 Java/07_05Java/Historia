@@ -1,0 +1,114 @@
+JAva Script 1995 
+Html -> 3/4 anos 
+
+cadastro [cpf,...] - leva ate 1 opu 2 minutos -> Servidor
+Servidor - html -> cadastro
+
+Processamento logico [Linguagem] 
+Linguagem sobre o navegador no lado do usuario[cadastro], empresa que começou modeScript, altera o html do lado do usuario, sem alterar o conteudo
+SANDBOX -> nao tem acesso ao web, linguagem dentro de uma gaiola-> VIEWPORT[dom],
+SANDBOX é uma caixa fechada 
+dentro do SANDBOX comocam o java que fazia uma janela chamada[ java applet] -> porem descontinuado, pois tinha falhas de segurança alem de ser ruim de programar.
+
+MoccaScript criaram porem ninguem queria programar -> javaScript[Entregou em 15 dias, o criador era um cara acostoumado e ele foi um dos criadores java applet].
+
+
+Hoje (07/05)
+
+Navegador - Console - Ver o saveBOX
+let nome= "bla"; [ Declara a Variavel]
+console.log(nome) [Mostra o que tem dentro da variavel]
+
+if(nome == "bla"){
+    console.log("var nome é igual a bla")}else{
+    console.log("var nome é diferente de a")}
+
+    JavaScript esta no mundo dele, nao consegue fazer arquivos e nem nada, so o DOM
+
+    Dentro de um objeto para se comunicar com o JAVASCRIPT
+    [Code] -> 
+    [Code]<- Html
+
+    DOM
+    [Bodes]
+    [div] e [Span]
+
+    document{ objeto}. outra estrutura.childNodes{Elementos}
+
+    document.body.childNodes[1].childNodes[9].textContent="bla"
+
+    let titulo =document.querySelector(".span10>h1") { Usar seletores}
+    titulo.innerHTML="bla"
+
+
+    titulo.innerHTML="<div><p> BLA BLA BLA </p> </div>"
+
+
+    imagem representacao 1 
+    analise o que deu novo
+
+
+
+    Programador louco = sobre carga no navegador{ pois quer mexer no maior elemento tipo dom }
+    
+
+    let novadiv = document.createElement("div")
+
+    novadiv.innerHTML="BLA"
+    titulo.appendChild(novadiv)
+
+    STYLE ACREGADO 
+    novadiv.style.backgroundColor="#A0AFEA"
+
+    TEm bibliotecas (twitter bootstrap(css) tailwind css(javascript))
+
+
+    document.body.innerHTML="bla" {descoi a imagem e cria um bla}
+
+    https://api.chucknorris.io/{API}
+
+
+    alert("ola")
+    prompt("informe seu nome")
+'wrehfguorehgoui'
+
+nome =prompt("informr seu nome")
+'jfvjfh'
+
+
+document.body.innerHTML=nome
+'jfvjfh'
+
+
+let a = prompt("Informe o valor a")
+undefined
+
+let b = prompt("Informe o valor b")
+undefined
+
+console.log(a+b)
+VM1979:1 23
+
+Linguagem dinamica {
+    typeof(a)
+'string'
+let n =10
+undefined
+typeof(n)
+'number'
+n="bla"
+'bla'
+typeof(n)
+} EXPLICAÇAO:
+por ser dinamica podemos mudar o tipo de variavel pelo conteudo da variavel
+
+
+
+Conversao: 
+let b =Number( prompt("Informe o valor B"));
+undefined
+let a =Number( prompt("Informe o valor A"));
+undefined
+console.log(a+b)
+
+O script coloca no final das tags, para nao dar erro de compilacao

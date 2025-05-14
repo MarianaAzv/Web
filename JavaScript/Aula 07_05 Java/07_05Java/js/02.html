@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que solicite ao usuario um numero, usando prompt e em seguida faça a contagem ate esse numero, imprimindo cada elemento no console */
+
+        /*Adicione um elemento de listagem ao body e adicione cada numero, da contagem, a um item <li> */
+
+       /*Altere a cor de fundo para vermelho, dos items contendo numeros pares*/
+
+
+       let n=Number(prompt("informe um numero para a conatgem regressiva"));
+       
+       let i=0;
+
+       for(i=0; i<=n; i++) {
+        console.log("i="+i);
+
+       }
+
+        /*Adicione um elemento de listagem ao body e adicione cada numero, da contagem, a um item <li> */
+            
+        let listagem =document.createElement("ul")
+        document.body.appendChild(listagem)
+
+        for(i=0; i<=n; i++) {
+      item=document.createElement("li")
+      item.innerHTML=i
+      item.id="n"+i
+      listagem.appendChild(item);
+
+        /*Altere a cor de fundo para vermelho, dos items contendo numeros pares*/
+        if(i%2==0){
+            item.style.backgroundColor="#FF0000"
+        }
+
+       }
+      
+    </script>
+</body>
+</html>
