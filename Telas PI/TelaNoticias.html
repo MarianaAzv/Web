@@ -7,15 +7,188 @@
 <style>
     
     @media Screen and (min-width:500px) and (max-width:1000px){
-        .Cabecalho {
-    padding: 10px;
-  }
-body{
-    padding-top: 10px;
-padding-right: 20px;
-padding-bottom: 10px;
-padding-left: 20px;
+        body{ 
+            .Cabecalho{
+        display: flex;
+        background-color: #3866416b;
+        border: 2px solid #3866416b;
+        
+        width: 100%;
+        height: 300px;
+        flex-flow: row wrap;
+    }
+
+    .Cabecalho #box2{
+        
+
+        display:flex;
+        background-color: #38664194;
+        width: 100%;
+        height: 200px; 
+        justify-content: flex-start;
+	align-items: flex-end;
+    align-self: flex-end;
+    justify-content: space-between;
+
+    }
+
+
+    .Titulo{
+       position: fixed;
+       right: 5%;
+    }
+    #traco1{
+   font-size: 25px;
+    }
+    #traco2{
+        font-size: 25px;
+    }
+    #Noticiastitulo{
+        color: #386641;
+        font-size: 25px;
+        font-family:'Courier New', Courier, monospace ;
+        font-weight: bold;
+    }
+
+.Noticias{
+    display:flex;
+   flex-direction: column;
 }
+    #box3{
+        background-color: #386641;
+        border: 2px solid #386641;
+       
+        position: fixed;
+        width: 300px;
+        height: 80px; 
+        top: 56%;
+        right: 25%;
+    }
+    #box4{
+        background-color: #386641;
+        border: 2px solid #386641;
+       
+        position: fixed;
+        width: 300px;
+        height: 80px; 
+        top:42%;
+       right: 20%;
+    }
+
+    #box5{
+        background-color: #386641;
+        border: 2px solid #386641;
+       
+        position: fixed;
+        width: 300px;
+        height: 80px; 
+        bottom: 20%;
+       right: 20%;
+    }
+
+    #box6{
+        background-color:#386641;
+        border: 2px solid #386641;
+       
+        position: fixed;
+        width: 300px;
+        height: 80px; 
+        bottom: 5%;
+       right: 25%;
+    }
+    #legenda1{
+        position:fixed;
+        top:50%;
+        right: 40%;
+       
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 15px;
+
+       
+    }
+    #legenda12{
+        position:fixed;
+        top:51%;
+        right:61%;
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 15px;
+    }
+
+    #legenda2{
+        position:fixed;
+        top:64%;
+        right: 40%;
+  
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 15px;
+    }
+
+    #legenda22{
+        position:fixed;
+        top:65%;
+        right:60%; 
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 15px;
+    }
+
+    #legenda3{
+        position:fixed;
+        top:79%;
+          right:60%;
+        
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 15px;
+    }
+    #legenda32{
+        position:fixed;
+      top:82%;
+      right:60%;
+        font-family:'Courier New', Courier, monospace ;
+        font-size: 15px;
+    }
+
+    #legenda4{
+        position:fixed;
+        top:93.5%;
+       right: 40%;
+       font-family:'Courier New', Courier, monospace ;
+       font-size: 15px;
+    }
+
+    #legenda42{
+        position:fixed;
+      top:95%;
+       right:61%;
+       font-family:'Courier New', Courier, monospace ;
+       font-size: 15px;
+    }
+
+
+    #imgFota{
+        position:fixed;
+        top:44%;
+        right:42%;
+    }
+    #imgFota1{
+        position:fixed;
+        top:58%;
+        right:42%; 
+    }
+    #imgFota2{
+        position:fixed;
+        top: 72%;
+        right:42%;
+    }
+    #imgFota3{
+        position:fixed;
+        top:88%;
+        right:42%;
+    }
+
+        }
+
+
+
 }
     
     .Cabecalho{
@@ -72,6 +245,8 @@ padding-left: 20px;
     #Noticiastitulo{
         color: #386641;
         font-size: 32px;
+        font-family:'Courier New', Courier, monospace ;
+        font-weight: bold;
     }
 
     .Noticias{
@@ -129,48 +304,56 @@ padding-left: 20px;
     #legenda1{
         position:fixed;
         top:47%;
-        right:33%;
+        right:29%;
+        font-family:'Courier New', Courier, monospace ;
        
     }
     #legenda12{
         position:fixed;
         top:50%;
-        right:40%;
+        right:38%;
+        font-family:'Courier New', Courier, monospace ;
     }
 
     #legenda2{
         position:fixed;
         top:47%;
         left:20%; 
+        font-family:'Courier New', Courier, monospace ;
     }
 
     #legenda22{
         position:fixed;
         top:50%;
         left:20%; 
+        font-family:'Courier New', Courier, monospace ;
     }
 
     #legenda3{
         position:fixed;
        bottom:8%;
         left:20%; 
+        font-family:'Courier New', Courier, monospace ;
     }
     #legenda32{
         position:fixed;
        bottom:5%;
         left:20%; 
+        font-family:'Courier New', Courier, monospace ;
     }
 
     #legenda4{
         position:fixed;
        bottom:8%;
-       right:33%;
+       right:29%;
+       font-family:'Courier New', Courier, monospace ;
     }
 
     #legenda42{
         position:fixed;
        bottom:5%;
-       right:40%; 
+       right:38%; 
+       font-family:'Courier New', Courier, monospace ;
     }
 
 
@@ -217,39 +400,51 @@ padding-left: 20px;
 
     #Inicio{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #Artigo{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #barra1{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #barra2{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #barra3{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #barra4{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #barra5{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #barra6{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #Publicacao{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #Campus{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
     #Noticias{
         color: #f5ebebde;
+        font-family:'Courier New', Courier, monospace ;
     }
     #Areasdeconhecimento{
         color: #386641;
+        font-family:'Courier New', Courier, monospace ;
     }
 
 </style>

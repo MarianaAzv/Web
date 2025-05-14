@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numero Aleatorio</h1>
+    <button id="button"> click aqui</button>
+    <p id="nrand"></p>
+
+    <script>
+        let min = document.querySelector("#valormin");
+        let max= document.querySelector("#valormax");
+
+        let button = document.querySelector("#button");
+        button.addEventListener("Click",() =>{
+            let minimo = Number(min.value)
+            let delta = Number(max.value)-Number(min.value)
+            let i = Math.trunc((Math.random()* delta)+ minimo)
+            let p = document.createElement("p")
+            p.innerHTML = "Numero aleatorio" + i
+            document.body.appendChild(p)
+        })
+    </script>
+</body>
+</html>
