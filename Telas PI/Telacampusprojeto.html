@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+         .Cabecalho{
+        display: flex;
+        background-color: #3866416b;
+        border: 2px solid #3866416b;
+        
+        width: 100%;
+        height: 150px;
+        flex-flow: row wrap;
+    }
+    #box1{
+        width: 300px;
+        height: 25px;
+        background-color: white;
+        border-radius: 2px;
+        position: fixed;
+        top:5%;
+
+       
+    }
+    
+    .Cabecalho #box2{
+        
+
+        display:flex;
+        background-color: #38664194;
+        width: 100%;
+        height: 50px; 
+        justify-content: flex-start;
+	align-items: flex-end;
+    align-self: flex-end;
+    justify-content: space-between;
+
+    }
+    
+
+
+   
+
+    .Titulo{
+        display:flex;
+        justify-content: space-between;
+      
+    }
+    #traco1{
+   font-size: 32px;
+    }
+    #traco2{
+        font-size: 32px;
+    }
+    #Campustitulo{
+        color: #386641;
+        font-size: 32px;
+    }
+
+    .Noticias{
+  display:inline-block;
+
+
+    }
+
+    #busola{
+        position: fixed;
+        top:48px;
+        left: 20px;
+    }
+
+    #x{
+        position: fixed;
+        top:48px;
+        left: 290px;
+    }
+
+    #logo{
+      
+        height: 70px;
+        position:fixed;
+        top:3%;
+        right:5%; 
+    }
+
+    #Inicio{
+        color: #386641;
+    }
+    #Artigo{
+        color: #386641;
+    }
+    #barra1{
+        color: #386641;
+    }
+    #barra2{
+        color: #386641;
+    }
+    #barra3{
+        color: #386641;
+    }
+    #barra4{
+        color: #386641;
+    }
+    #barra5{
+        color: #386641;
+    }
+    #barra6{
+        color: #386641;
+    }
+    #Publicacao{
+        color: #386641;
+    }
+    #Campus{
+        color: #386641;
+    }
+    #Noticias{
+        color: #386641;
+    }
+    #Areasdeconhecimento{
+        color: #386641;
+    }
+
+    #LocalizacaoCampus{
+        position:fixed;
+       left: 22%;
+       top:23%;
+        font-size: 25px;
+    }
+
+   #box11{
+    width: 70px;
+  height: 70px;
+  background-color: #386641;
+  border-radius: 100%;
+  position: fixed;
+top: 45%;
+left: 13%;
+   }
+
+   #box21{
+    width: 70px;
+  height: 70px;
+  background-color: #386641;
+  border-radius: 100%;
+  position: fixed;
+top: 60%;
+left: 13%;
+}
+#box31{
+    width: 70px;
+  height: 70px;
+  background-color: #386641;
+  border-radius: 100%;
+  position: fixed;
+top: 75%;
+left: 13%;
+}
+#box41{
+    width: 70px;
+  height: 70px;
+  background-color: #386641;
+  border-radius: 100%;
+  position: fixed;
+top: 90%;
+left: 13%;
+}
+#box51{
+    width: 70px;
+  height: 70px;
+  background-color: #386641;
+  border-radius: 100%;
+  position: fixed;
+top: 30%;
+left: 13%;
+}
+
+#legenda1{
+    position: fixed;
+top: 30%;
+left: 18%;
+font-size: 25px;
+}
+
+#legenda12{
+    position: fixed;
+top: 34%;
+left: 18%;
+font-size: 15px;
+}
+
+#l21{
+    position: fixed;
+top: 34%;
+right: 37%;
+font-size: 15px;
+}
+
+
+#legenda2{
+    position: fixed;
+top: 45%;
+left: 18%;
+font-size: 25px;
+}
+
+#legenda22{
+    position: fixed;
+top: 49%;
+left: 18%;
+font-size: 15px;
+}
+
+#l222{
+    position: fixed;
+top: 49%;
+right: 37%;
+font-size: 15px;
+}
+
+
+
+#legenda3{
+    position: fixed;
+top: 60%;
+left: 18%;
+font-size: 25px;
+}
+
+#legenda32{
+    position: fixed;
+top: 64%;
+left: 18%;
+font-size: 15px;
+}
+
+#l23{
+    position: fixed;
+top: 64%;
+right: 37%;
+font-size: 15px;
+}
+
+
+
+#legenda4{
+    position: fixed;
+top: 75%;
+left: 18%;
+font-size: 25px;
+}
+
+#legenda42{
+    position: fixed;
+top: 79%;
+left: 18%;
+font-size: 15px;
+}
+
+#l24{
+    position: fixed;
+top: 79%;
+right: 37%;
+font-size: 15px;
+}
+
+
+#legenda5{
+    position: fixed;
+top: 90%;
+left: 18%;
+font-size: 25px;
+}
+
+#legenda52{
+    position: fixed;
+top: 94%;
+left: 18%;
+font-size: 15px;
+}
+
+#l25{
+    position: fixed;
+top: 94%;
+right: 37%;
+font-size: 15px;
+}
+
+
+#imgFoto1{
+    height: 30px;
+    width: 50px;
+    position: fixed;
+top: 47%;
+left: 13.5%;
+}
+
+#imgFoto2{
+    height: 30px;
+    width: 50px;
+    position: fixed;
+top: 62%;
+left: 13.5%;
+}
+
+#imgFoto3{
+    height: 30px;
+    width: 50px;
+    position: fixed;
+top: 32%;
+left: 13.5%;
+}
+#imgFoto4{
+    height: 30px;
+    width: 50px;
+    position: fixed;
+top: 92%;
+left: 13.5%;
+}
+
+#imgFoto5{
+    height: 30px;
+    width: 50px;
+    position: fixed;
+top: 77%;
+left: 13.5%;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="Cabecalho">
+        <div class ="Cabecalho" id="box1"></div>
+        <div class ="Cabecalho" id="box2">
+            <h2 id="Inicio">
+                <span id="Inicio1">
+                    Inicio
+                </span>
+               
+            </h2>
+
+            <h2 id="barra1">
+               |
+            </h2>
+
+            <h2 id="Artigo">
+                Artigo
+            </h2>
+
+            <h2 id="barra2">
+                |
+             </h2>
+
+             <h2 id="Publicacao">
+               Publicação
+            </h2>
+
+            <h2 id="barra3">
+                |
+             </h2>
+
+             <h2 id="Noticias">
+               Noticias
+             </h2>
+ 
+             <h2 id="barra4">
+                 |
+              </h2>
+
+              <h2 id="Campus">
+                Campus
+             </h2>
+ 
+             <h2 id="barra5">
+                 |
+              </h2>
+
+              <h2 id="Areasdeconhecimento">
+                Areas de conhecimento
+             </h2>
+ 
+             <h2 id="barra6">
+                 |
+              </h2>
+        </div>
+    </div>
+
+    <div class=" Titulo">
+        <span id="traco1">----------------------------------------------</span><span id="Campustitulo" >Campus XXXXXXX</span><span id="traco2">----------------------------------------------</span>
+    </div> 
+
+    <div id="busola">
+        🔍
+    
+      </div>
+    
+      <div id="x"> ✖️</div>
+    
+      <img id="logo" src="./Variant3.png" alt="Imagem da logo do sistema">
+ 
+      <div id="LocalizacaoCampus">
+        <span> Localização do câmpus ************************************************ </span></div>
+
+
+<div class="Fotos">
+    <div class ="Fotos" id="box11"></div>
+    <div class ="Fotos" id="box21"></div>
+    <div class ="Fotos" id="box31"></div>
+    <div class ="Fotos" id="box41"></div>
+    <div class ="Fotos" id="box51"></div>
+</div>
+
+<div id="legenda">
+    <h2 id="legenda1">
+        Nome do Projeto******************************************************** </h2>
+        <h2 id="legenda12"> <span id="l12">Nome  do coodenador principal </span></h2>
+        <h2 id="legenda21"> <span id="l21">Area de conhecimento </span></h2>
+
+        <h2 id="legenda2">
+            Nome do Projeto******************************************************** </h2>
+            <h2 id="legenda22"><span id="l22">Nome do coodenador principal</span></h2>
+            <h2 id="legenda222"> <span id="l222">Area de conhecimento</span></h2>
+
+            <h2 id="legenda3">
+                Nome do Projeto******************************************************** </h2>
+                <h2 id="legenda32"><span id="l32">Nome do coodenador principal</span>  </h2>
+                <h2 id="legenda23"> <span id="l23">Area de conhecimento </span></h2>
+
+                <h2 id="legenda4">
+                    Nome do Projeto******************************************************** </h2>
+                    <h2 id="legenda42"><span id="l42">Nome  do coodenador principal</span></h2>
+                    <h2 id="legenda24"> <span id="l24">Area de conhecimento</span></h2>
+
+                    <h2 id="legenda5">
+                        Nome do Projeto******************************************************** </h2>
+                        <h2 id="legenda52"><span id="l52">Nome  do coodenador principal</span></h2>
+                        <h2 id="legenda25"> <span id="l25">Area de conhecimento</span></h2>
+</div>
+
+<div>
+    <img id="imgFoto1" src ="./Foto.png" alt="Imagem de foto">
+    <img id="imgFoto2" src ="./Foto.png" alt="Imagem de foto">
+    <img id="imgFoto3" src ="./Foto.png" alt="Imagem de foto">
+    <img id="imgFoto4" src ="./Foto.png" alt="Imagem de foto">
+    <img id="imgFoto5" src ="./Foto.png" alt="Imagem de foto">
+  </div>
+
+</body>
+</html>
