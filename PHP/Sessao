@@ -1,7 +1,0 @@
-Protocolo com sessao:
-para os dados nao se perderem, id desessao fica armazenado num cookie, 
-
-
-Banco de dados em php
-mysql_connation 
-PDO 
