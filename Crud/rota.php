@@ -45,7 +45,7 @@ switch($rota){
 
                 case 'Inserir':
                     $auth=new AuthUsuarioController();
-
+                    $auth->Cadastrar();
                     break;
          default:
          echo "Rota desconhecida";

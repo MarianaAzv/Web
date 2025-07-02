@@ -22,7 +22,7 @@ echo $_SESSION['usr'];
          
            <h2>Lista de Usuario</h2>
            <main>
-<?php require "listarUsuarios.php"?>
+<?php require "listarUsuario.php"?>
 </main>
 
 </body>

@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action = "rota.php?rota=Cadastro" method="post">
+<form action = "rota.php?rota=Inserir" method="post">
 
 <label for="nome">Nome</label>
 <input type= "nome" id="nome" name="nome">

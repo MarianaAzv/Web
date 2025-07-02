@@ -7,7 +7,7 @@ class AuthUsuarioController{
 public function Cadastrar(){
     $dao=new UsuarioDAO();
 
-    if(isset($_POST['nome']) && isset($_POST['senha']&& isset($_POST['email']))){
+    if(isset($_POST['nome']) && isset($_POST['senha']) && isset($_POST['email'])){
         $nome=$_POST['nome'];
         $senha=$_POST['senha'];
         $email=$_POST['email'];
