@@ -8,18 +8,21 @@ class AuthController{
         $dao=new UsuarioDAO();
 
         if(isset($_POST['email']) && isset($_POST['senha'])){
-            $login=$_POST['email'];
+            $email=$_POST['email'];
             $senha=$_POST['senha'];
 
            $usr=$dao->autenticar($email,$senha);
-
-            if(!isset($urs)){
+           // echo var_dump($usr);
+           // exit;
+            if(isset($usr)){
+                $_SESSION['usr']=$usr->id;
                 header("Location:rota.php?rota=home");
+
             }else{
                 header("Location:rota.php");
             }
         } else{
-            header("Location:rota.php");
+            header("Location:rota.php");  
         }
     }
 }

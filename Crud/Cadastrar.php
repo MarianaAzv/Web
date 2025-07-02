@@ -6,15 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-   <form action = "rota.php?rota=autenticacao" method="post">
-<label for="email">login</label>
-<input type= "email" id="email" name="email">
+<form action = "rota.php?rota=Cadastro" method="post">
+
+<label for="nome">Nome</label>
+<input type= "nome" id="nome" name="nome">
 
 
 <label for="senha">senha</label>
 <input type= "senha" id="senha" name="senha">
 
-<input type="submit" value="autenticar">
+<label for="email">email</label>
+<input type="email" id="email" name="email">
+
+<input type="submit" value="Cadastrar">
    </form> 
 </body>
 </html>
