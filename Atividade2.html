@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout CSS Grid Fixo</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "header header"
+        "nav content"
+        "footer footer";
+   
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      
+      padding: 10px;
+    }
+
+    #box1 { 
+      grid-area: header;
+       background-color: #f74178;
+         text-align: center;
+          font-size: 70px;
+       }
+    #box2 {
+       grid-area: nav; 
+       background-color: #e7e27b; 
+         text-align: center;
+         font-size: 70px;
+      }
+    #box3 { 
+      grid-area: content;
+       background-color: #da8247;
+       text-align: center;
+        font-size: 70px;
+      
+       }
+    #box4 {
+       grid-area: footer; 
+       background-color: #78e796; 
+         text-align: center;
+          font-size: 70px;
+      }
+      #texto{
+        font-size: 25px;
+        
+      }
+
+  </style>
+</head>
+<body>
+  <div class="box" id="box1"><b>Header</b></div>
+  <div class="box" id="box2">Nav</div>
+  <div class="box" id="box3"> <b>Content</b>
+
+     <div id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Accusamus nesciunt, iste reiciendis nemo tempora voluptatem <br>consequuntur aspernatur? 
+    Magnam, quisquam earum! Assumenda quidem eaque consequuntur voluptas voluptates, maxime voluptatem ad odit.</div>
+  </div>
+ 
+  <div class="box" id="box4"><b>footer</b></div>
+</body>
+</html>

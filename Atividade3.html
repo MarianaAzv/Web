@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+      
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 150px 1fr 150px;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "A A  . B"
+        "C AB AB AB";
+      gap: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+   
+    }
+
+    .box{
+         display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    #box1{
+        background-color: black;
+grid-area: A;
+ height: 80px; 
+    }
+    #box2{
+                background-color: white;
+        grid-area: none;
+    }
+
+
+#box3{
+            background-color: black;
+        grid-area: B;
+         height: 80px; 
+    }
+
+    #box4{
+                background-color: black;
+        grid-area: C;
+    }
+    #box5{
+                background-color: black;
+        grid-area: AB;
+          display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    #t1,#t2,#t3,#t4,#t5,#t6{
+        background-color: gray;
+        border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-weight: bold;
+       width: 90%;
+  height: 90%;
+    }
+</style>
+<body>
+    <div class="box" id="box1">A</div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3">B</div>
+    <div class="box" id="box4">C</div>
+     <div class="box" id="box5">
+        <div id="t1">E</div>
+        <div id="t2">D</div>
+        <div id="t3">F</div>
+        <div id="t4">G</div>
+        <div id="t5">H</div>
+     <div id="t6">I</div>
+     </div>
+</body>
+</html>
