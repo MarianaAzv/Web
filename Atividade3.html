@@ -10,7 +10,7 @@
       body {
       margin: 0;
       padding: 0;
-      background: #aaa;
+   
       display: flex;
       justify-content: center;
       align-items: center;
@@ -18,6 +18,42 @@
       font-family: Arial, sans-serif;
     }
     
+    .container{
+        background: #f4f4f4;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      flex-direction: column;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    #linha1{
+          display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+  
+    }
+
+    #linha2{
+ display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #linha3{
+ display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #linha4{
+ display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
     #img1,#img2,#img3,#img4{
       width: 50px;
       height: 50px;
@@ -28,31 +64,45 @@
         font-style: oblique;
     }
 
+    .info{
+        display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+    }
+
 </style>
 <body>
     <div class="container">
          <div id="linha1">
         <img id="img1" src="./imagens/filosofo1.jpg" alt="">
+         <div class="info">
         <div id="p1"><strong>Linda Hart</strong> </div>
-        <p>6765 Shady Ln Dr</p>
+        <p id="p11">6765 Shady Ln Dr</p>
+         </div>
          </div>
 
         <div id="linha2">
               <img id="img2" src="./imagens/filosofo2.jpg" alt="">
+               <div class="info">
         <div id="p2"> <strong>Medina</strong> </div>
-        <p>2420 Paddock Way</p>
+        <p id="p21">2420 Paddock Way</p>
+        </div>
         </div>
 
         <div id="linha3">
               <img id="img3" src="./imagens/filossofo3.jpg" alt="">
+                 <div class="info">
         <div id="p3"><strong>Dean Sullivan</strong> </div>
-        <p>6727 Airplane Ave</p>
+        <p id="p31">6727 Airplane Ave</p>
+                 </div>
         </div>  
 
          <div id="linha4">
               <img id="img4" src="./imagens/florbela espanca.png" alt="">
+                 <div class="info">
         <div id="p4"><strong> Elizabeth Austin</strong></div>
-        <p>6685 Blossom Hill Rd</p>
+        <p id="p41">6685 Blossom Hill Rd</p>
+                 </div>
          </div>  
           
           
