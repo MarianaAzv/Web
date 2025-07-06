@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 id="tituloPrincipal">O que é JavaScript?</h1>
+
+    <p id="paragrafoExplicacao">
+    <strong>a)</strong> A motivação para a criação do JavaScript surgiu devido à natureza estática das páginas da web nos seus primeiros anos. Os usuários não tinham como interagir com os sites, o que tornava a experiência de navegação limitada, pouco envolvente e, muitas vezes, demorada. O JavaScript foi desenvolvido para trazer interatividade e dinamismo às páginas, permitindo uma navegação mais atrativa e responsiva.
+    <br><br>
+    <strong>b)</strong> O código JavaScript pode ser executado tanto no navegador quanto no servidor, mas suas funções são distintas em cada ambiente. No navegador (client-side), o foco está em melhorar a interação e o comportamento da página, como manipulação de elementos da interface, criação de layouts dinâmicos, animações, navegação entre seções e validação de formulários.<br>
+    Já no servidor (server-side), o código é responsável por processar dados, acessar e manipular bancos de dados, validar informações recebidas, gerenciar autenticações e enviar ao navegador apenas os dados necessários. Ou seja, enquanto o código do cliente cuida da interação visual, o código do servidor gerencia a lógica e o armazenamento de dados.
+</p>
+
+ 
+            <p id="C"><strong>c.1)</strong>document: Permite acessar e manipular o conteúdo da página web.</p>
+            <p id="D"><strong>c.2)</strong>console:Usado para registrar mensagens no console do navegador, útil para depuração.</p>
+            <p id="E"><strong>c.3)</strong>alert: Exibe caixas de diálogo simples para o usuário, geralmente com mensagens de alerta ou informações.</p>
+
+             <p id="horaAtual"></p>
+      
+</body>
+<script>
+        // Exibe uma saudação ao carregar a página
+        alert("Explicação sobre JavaScript!");
+
+        // Exibe uma mensagem no console
+        console.log("A página foi carregada com sucesso.");
+
+        // Mostra a hora atual no parágrafo com id "horaAtual"
+        window.onload = function() {
+            const agora = new Date();
+            const hora = agora.toLocaleTimeString();
+            document.getElementById("horaAtual").innerHTML = "Hora atual: " + hora;
+        };
+    </script>
+</html>
