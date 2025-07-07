@@ -11,8 +11,11 @@ public function Cadastrar(){
         $nome=$_POST['nome'];
         $senha=$_POST['senha'];
         $email=$_POST['email'];
+        $usuario = new Usuario($nome, $email, $senha);
 
-       $usr=$dao-> insere($nome,$email,$senha);
+       $usr=$dao-> insere($usuario);
+}else{
+    header("Location:rota.php");
 }
 }
 }
