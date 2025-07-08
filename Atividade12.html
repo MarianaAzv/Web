@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+
+  <canvas id="Canvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+  <script>
+    
+    const canvas = document.getElementById("Canvas");
+    const cad= canvas.getContext("2d");
+
+    
+    cad.fillStyle = "blue";   
+    cad.fillRect(50, 50, 100, 50);  
+
+   
+    cad.beginPath();
+    cad.arc(200, 150, 30, 0, Math.PI * 2);  
+    cad.fillStyle = "red";
+    cad.fill();
+
+   
+   cad.fillStyle = "black";
+   cad.font = "20px Arial";
+    cad.fillText("Canvas!", 120, 250);  
+  </script>
+</body>
+</html>
