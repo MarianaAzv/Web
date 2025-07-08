@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="inicio">Número Inicial:</label>
+    <input type="number" id="inicio">
+
+    <label for="fim">Número Final:</label>
+    <input type="number" id="fim">
+
+    <button id="btnVerificar">Verificar</button>
+
+    <h2>Primos Encontrados:</h2>
+    <p id="resultadoPrimos"></p>
+
+<script>
+
+      document.getElementById("btnVerificar").addEventListener("click", () => {
+          let inicio = parseInt(document.getElementById("inicio").value);
+            let fim = parseInt(document.getElementById("fim").value);
+           let resultado = document.getElementById("resultadoPrimos");
+            
+            if (isNaN(inicio) || isNaN(fim) || inicio > fim) {
+                alert("Inserir TODOS os dados");
+                return;
+            }
+
+            let nprimos = [];
+
+
+             for (let n = inicio; n <= fim; n++) {
+                if (n > 1) {
+                    let PrimoSN = true;
+
+                    for (let i = 2; i <= Math.sqrt(n); i++) {
+
+                        if (n % i === 0) {
+                            PrimoSN= false;
+                             break;
+                        }
+                    }
+                    if (PrimoSN) {
+                        nprimos.push(n);
+                    }
+                }
+            }
+
+             if (nprimos.length === 0) {
+                resultado.innerText = "Nenhum número primo encontrado neste intervalo.";
+            } else {
+                resultado.innerText = " Estes sao os números primos encontrados nesse intervalo de tempo: " + nprimos.join(", ");
+            }
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="button" onclick="mostrarTipos()">Click</button>
+
+     <p id="pString"></p>
+         <p id="pNumber"></p>
+             <p id="pBoolean"></p>
+                 <p id="pundefined"></p>
+                  <p id="pNull"></p>
+                   <p id="pObject"></p>
+                    <p id="pArray"></p>
+
+
+
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                    <p id="p3"></p>
+                      <p id="p4"></p>
+                      <script>
+
+    function mostrarTipos() {
+         
+            let tex = "Oii!";
+            let n = 7;
+            let booleano = true;
+            let indefinido;
+            let nullo = null;
+            let obj = { nome: "oi", idade: 5 };
+            let array = [n,2,obj];
+
+           
+            document.getElementById("pString").innerText = "Valor do tex: " + typeof tex;
+            document.getElementById("pNumber").innerText = "Valor do n: " + typeof n;
+            document.getElementById("pBoolean").innerText = "Valor do booleano: " + typeof booleano;
+            document.getElementById("pundefined").innerText = "Valor do indefinido: " + typeof indefinido;
+            document.getElementById("pNull").innerText = "Valor do nullo: " + typeof nullo;
+            document.getElementById("pObject").innerText = "Valor do obj: " + typeof obj;
+            document.getElementById("pArray").innerText = "Valor do array: " + typeof array;
+
+             indefinido = "Agora tenho valor!";
+            document.getElementById("pundefined").innerText = "Valor do indefinido com valor atribuido: " + typeof indefinido;
+
+           
+            let operacao1 = tex + n;  
+            let operacao2 = booleano * n;  
+            let operacao3 = n + nullo;  
+            let operacao4= n + n;
+
+           
+            console.log("texto + numero: Da uma concatenação, pois nao tem como somar um numero com um texto", operacao1);
+            console.log("booleano * numero: O true é convertido para 1 ", operacao2);
+            console.log("numero + nulo: nullo+ um numero o resultado ira ser o numero", operacao3);
+            console.log("numero + numero: ira somar os dois numeros", operacao4);
+         
+            document.getElementById("p1").innerText = `"${tex}" + ${n} = "${operacao1}" (Da uma concatenação, pois nao tem como somar um numero com um texto)`;
+            document.getElementById("p2").innerText = `${booleano} * ${n} = ${operacao2} (O true é convertido para 1)`;
+            document.getElementById("p3").innerText = `${n} + ${nullo} = ${operacao3} (nullo+ um numero o resultado ira ser o numero)`;
+            document.getElementById("p4").innerText = `${n} + ${n} = ${operacao4} (ira somar os dois numeros)`;
+    }
+</script>
+</body>
+
+
+</html>

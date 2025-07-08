@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paleta de Cores Dinâmica</title>
+<style>
+  .paleta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .cor {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #c1 { background-color: #05668D; }
+  #c2 { background-color: #427AA1; }
+  #c3 { background-color: #EBF2FA; }
+  #c4 { background-color: #679436; }
+  #c5 { background-color: #A5BE00; }
+</style>
+</head>
+<body>
+
+  <div class="paleta">
+    <div class="cor" id="c1"></div>
+    <div class="cor" id="c2"></div>
+    <div class="cor" id="c3"></div>
+    <div class="cor" id="c4"></div>
+    <div class="cor" id="c5"></div>
+  </div>
+
+  <button id="btnMudar">Mudar cores</button>
+
+<script>
+  function gerarCorAleatoria() {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+  }
+
+  function mudarCores() {
+    const divs = document.querySelectorAll('.cor');
+    divs.forEach(div => {
+      const cor = gerarCorAleatoria();
+      div.style.backgroundColor = cor;
+     
+    });
+  }
+
+  document.getElementById('btnMudar').addEventListener('click', mudarCores);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+      
+      mudarCores();
+    }
+  });
+</script>
+
+</body>
+</html>

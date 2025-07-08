@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora Simples</title>
+ 
+</head>
+<body>
+  <h1>Calculadora Simples</h1>
+
+  <input type="number" id="valor1" placeholder="Digite o primeiro número" />
+  <input type="number" id="valor2" placeholder="Digite o segundo número" />
+
+  <div class="operacoes">
+   <button type="button" data-op="+">Adição</button>
+    <button type="button" data-op="-">Subtração</button>
+    <button type="button" data-op="*">Multiplicação</button>
+    <button type="button" data-op="/">Divisão</button>
+  </div>
+
+  <button id="calcular">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    const botoesOperacao = document.querySelectorAll('.operacoes button');
+    let operacaoSelecionada = null;
+
+
+    botoesOperacao.forEach(botao => {
+      botao.addEventListener('click', () => {
+        botoesOperacao.forEach(b => b.classList.remove('selected'));
+        botao.classList.add('selected');
+        operacaoSelecionada = botao.getAttribute('data-op');
+      });
+    });
+
+    function calcular() {
+     let v1 = parseFloat(document.getElementById("valor1").value);
+      let v2 = parseFloat(document.getElementById("valor2").value);
+     let resultadoEl = document.getElementById("resultado");
+
+      if (isNaN(v1) || isNaN(v2)) {
+        resultadoEl.textContent = "Insrir todos os campus";
+        return;
+      }
+
+      if (!operacaoSelecionada) {
+        resultadoEl.textContent = "Faltou selecionar um botão de uma operação";
+        return;
+      }
+
+      let resultado;
+
+      switch (operacaoSelecionada) {
+        case "+":
+          resultado = v1 + v2;
+          break;
+        case "-":
+          resultado = v1 - v2;
+          break;
+        case "*":
+          resultado = v1 * v2;
+          break;
+        case "/":
+          if (v2 === 0) {
+            resultadoEl.textContent = "Resultado é zero";
+            return;
+          }
+          resultado = v1 / v2;
+          break;
+        default:
+          resultadoEl.textContent = "Operação inválida.";
+          return;
+      }
+
+      resultadoEl.textContent = `Resultado: ${resultado}`;
+    }
+
+    document.getElementById("calcular").addEventListener("click", calcular);
+  </script>
+</body>
+</html>
