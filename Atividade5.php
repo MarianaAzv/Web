@@ -23,7 +23,7 @@
         $max = intval($_POST['max']);
 
         if ($min > $max) {
-            echo "<p style='color:red;'>Erro: O valor mínimo deve ser menor ou igual ao máximo.</p>";
+            echo "<p style='color:red;'>Erro</p>";
         } else {
             $numeroSorteado = rand($min, $max);
             echo "<h2>Número sorteado: <strong>$numeroSorteado</strong></h2>";

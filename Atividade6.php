@@ -23,8 +23,8 @@
             $resultado = "Ímpar";
         }
 
-        echo "<h2>Você digitou o número: <strong>$numero</strong></h2>";
-        echo "<h2>Resultado: <strong>$resultado</strong></h2>";
+        echo "O número foi: $numero";
+        echo "Resultado: $resultado";
     }
     ?>
 </body>

@@ -8,16 +8,16 @@
   
 
     <form method="POST">
-        <label for="numero">Digite um número:</label>
+        <label for="numero">Digite um numero:</label>
         <input type="number" id="numero" name="numero" required>
-        <button type="submit">Gerar Tabuada</button>
+        <button type="submit">Click</button>
     </form>
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $numero = intval($_POST['numero']);
 
-        echo "<h2>Tabuada do número <strong>$numero</strong>:</h2>";
+        echo "Tabuada do: $numero";
         echo "<ul>";
 
         for ($i = 1; $i <= 10; $i++) {
